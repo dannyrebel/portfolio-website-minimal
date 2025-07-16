@@ -6,8 +6,7 @@ export default function Header() {
         Front End Engineer
       </h2>
       <p className="font-jetbrains-mono text-md opacity-70 max-w-200 mx-auto">
-        I craft sleek, accessible interfaces that turn design dreams into fast,
-        responsive, and pixel-perfect web realities.
+        I turn design ideas into fast, accessible web experiences.
       </p>
     </div>
   );
