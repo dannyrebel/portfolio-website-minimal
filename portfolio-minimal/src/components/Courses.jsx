@@ -10,7 +10,7 @@ export default function Courses({ children: slides }) {
     setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
   };
   return (
-    <div className="overflow-hidden relative max-w-175 mx-auto mt-10">
+    <div className="overflow-hidden relative max-w-85 mx-auto mt-10">
       <div
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
