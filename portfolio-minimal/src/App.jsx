@@ -1,8 +1,7 @@
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import AboutText from "./components/AboutText";
-import AboutSkills from "./components/AboutSkills";
-import Courses from "./components/Courses";
+import AboutSection from "./components/AboutSection";
+import PortfolioCards from "./components/Portfolio/PortfolioCards";
 
 import HTMLCSS from "./assets/HTMLCSS.jpg";
 import JSFrontEnd from "./assets/JSFrontEnd.jpg";
@@ -21,17 +20,11 @@ const slidesCertificate = [
 
 function App() {
   return (
-    <div className="relative flex  flex-col min-h-screen w-full bg-slate-900">
+    <div className="relative flex flex-col min-h-screen w-full bg-slate-900">
       <Navbar />
       <Header />
-      <AboutText />
-      <AboutSkills />
-      <Courses>
-        {slidesCertificate.map((slide, index) => (
-          <img key={index} src={slide} alt={`Slide ${index}`} />
-        ))}
-      </Courses>
-      <AboutText />
+      <AboutSection slidesCertificate={slidesCertificate} />
+      <PortfolioCards />
     </div>
   );
 }

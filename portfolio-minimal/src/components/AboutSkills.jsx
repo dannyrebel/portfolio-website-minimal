@@ -21,14 +21,21 @@ const skills = [
 export default function AboutSkills() {
   return (
     <div>
-      <h2 className="font-jetbrains-mono text-2xl font-bold text-slate-200/90 text-center mt-5">
+      <h2 className="font-jetbrains-mono text-2xl font-bold text-slate-200/90 text-center mb-6">
         Skills & Education
       </h2>
-      <div className="flex flex-row mt-5 space-x-10 justify-center">
+
+      {/* Grid layout that works in narrow containers */}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-2 xl:grid-cols-3 gap-4">
         {skills.map(({ icon: Icon, label }) => (
-          <div className="flex flex-col items-center" key={label}>
-            {Icon && <Icon className="text-lime-100 text-5xl mx-auto mt-5" />}
-            <p className="text-slate-200 text-center">{label}</p>
+          <div
+            className="flex flex-col items-center p-3 rounded-lg bg-slate-700/30 hover:bg-slate-700/50 transition-all duration-300 hover:scale-105"
+            key={label}
+          >
+            {Icon && <Icon className="text-lime-400 text-4xl mb-2" />}
+            <p className="text-slate-200 text-center text-sm font-medium">
+              {label}
+            </p>
           </div>
         ))}
       </div>

@@ -6,3 +6,27 @@
   --font-jetbrains: "JetBrains Sans", sans-serif;
   --font-jetbrains-mono: "JetBrains Mono", monospace;
 }
+@layer utilities {
+  .animate-typewriter {
+    animation: typewriter 3s steps(30, end), blink 0.75s step-end infinite;
+  }
+
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink {
+    0%,
+    100% {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #a3e635;
+    }
+  }
+}

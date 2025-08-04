@@ -1,6 +1,6 @@
 export default function About() {
   return (
-    <div className="p-2 space-y-4 mt-15 text-slate-200 text-center max-w-300 mx-auto">
+    <div className="p-2 space-y-4 text-slate-200 text-center mt-10 max-w-300 mx-auto">
       <p className="font-jetbrains-mono text-md opacity-70">
         I'm a developer who loves building accessible, high-quality user
         interfaces where thoughtful design meets strong engineering. I'm
