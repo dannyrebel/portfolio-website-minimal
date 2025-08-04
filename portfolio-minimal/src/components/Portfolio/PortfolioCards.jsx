@@ -9,7 +9,7 @@ export default function PortfolioCards() {
         </h2>
       </div>
 
-      <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-8 mx-auto px-6 mb-20">
+      <div className="grid lg:grid-cols-3 sm:grid-cols-1 gap-8 mx-auto px-6 mb-10">
         {/* Portfolio Card 1 */}
         <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-6 border border-slate-700/50 hover:border-lime-400/30 transition-all duration-300">
           <div className="flex flex-col sm:flex-row gap-4">

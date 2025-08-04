@@ -3,11 +3,14 @@ import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import PortfolioCards from "./components/Portfolio/PortfolioCards";
 
+import { useRef } from "react";
+
 import HTMLCSS from "./assets/HTMLCSS.jpg";
 import JSFrontEnd from "./assets/JSFrontEnd.jpg";
 import postGreSQL from "./assets/postGreSQL.jpg";
 import pythonAdvanced from "./assets/pythonAdvanced.jpg";
 import pythonOOP from "./assets/pythonOOP.jpg";
+import PortfolioFile from "./components/Portfolio/PortfolioFile";
 
 const slidesCertificate = [
   JSFrontEnd,
@@ -19,12 +22,24 @@ const slidesCertificate = [
 ];
 
 function App() {
+  const portfolioSectionRef = useRef(null);
+  const contactSectionRef = useRef(null);
   return (
     <div className="relative flex flex-col min-h-screen w-full bg-slate-900">
       <Navbar />
-      <Header />
+      <Header
+        onPortfolioClick={() => {
+          portfolioSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+        }}
+        onContactClick={() => {
+          contactSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+        }}
+      />
       <AboutSection slidesCertificate={slidesCertificate} />
-      <PortfolioCards />
+      <section ref={portfolioSectionRef} className="scroll-mt-20">
+        <PortfolioCards />
+        <PortfolioFile />
+      </section>
     </div>
   );
 }

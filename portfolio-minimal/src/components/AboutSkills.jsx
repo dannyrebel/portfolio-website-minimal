@@ -22,7 +22,7 @@ export default function AboutSkills() {
   return (
     <div>
       <h2 className="font-jetbrains-mono text-2xl font-bold text-slate-200/90 text-center mb-6">
-        Skills & Education
+        Skills
       </h2>
 
       {/* Grid layout that works in narrow containers */}

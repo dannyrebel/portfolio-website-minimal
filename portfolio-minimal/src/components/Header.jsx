@@ -1,4 +1,4 @@
-export default function Header() {
+export default function Header({ onPortfolioClick, onContactClick }) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-900 relative overflow-hidden">
       {/* Background Grid Placeholder */}
@@ -26,12 +26,18 @@ export default function Header() {
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mt-12">
-          <button className="px-8 py-4 bg-lime-400 text-slate-900 font-jetbrains-mono font-bold text-lg rounded-none border-2 border-lime-400 hover:bg-transparent hover:text-lime-400 transition-transform transform hover:scale-105 shadow-lg hover:shadow-lime-400/50 relative overflow-hidden group">
+          <button
+            onClick={onPortfolioClick}
+            className="px-8 py-4 bg-lime-400 text-slate-900 font-jetbrains-mono font-bold text-lg rounded-none border-2 border-lime-400 hover:bg-transparent hover:text-lime-400 transition-transform transform hover:scale-105 shadow-lg hover:shadow-lime-400/50 relative overflow-hidden group"
+          >
             <span className="relative z-10">[VIEW_PORTFOLIO.exe]</span>
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-500" />
           </button>
 
-          <button className="px-8 py-4 border-2 border-green-400 text-green-400 font-jetbrains-mono font-bold text-lg rounded-none hover:bg-green-400 hover:text-slate-900 transition-transform transform hover:scale-105 relative overflow-hidden group">
+          <button
+            onClick={onContactClick}
+            className="px-8 py-4 border-2 border-green-400 text-green-400 font-jetbrains-mono font-bold text-lg rounded-none hover:bg-green-400 hover:text-slate-900 transition-transform transform hover:scale-105 relative overflow-hidden group"
+          >
             <span className="relative z-10">[CONTACT_ME.bat]</span>
             <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-500" />
           </button>
