@@ -2,6 +2,7 @@ import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 import AboutSection from "./components/AboutSection";
 import PortfolioCards from "./components/Portfolio/PortfolioCards";
+import ContactSection from "./components/Contact/ContactSection";
 
 import { useRef } from "react";
 
@@ -39,6 +40,9 @@ function App() {
       <section ref={portfolioSectionRef} className="scroll-mt-20">
         <PortfolioCards />
         <PortfolioFile />
+      </section>
+      <section ref={contactSectionRef}>
+        <ContactSection />
       </section>
     </div>
   );
