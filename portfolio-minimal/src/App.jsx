@@ -1,6 +1,6 @@
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
-import AboutSection from "./components/AboutSection";
+import AboutSection from "./components/AboutSection/AboutSection.jsx";
 import PortfolioCards from "./components/Portfolio/PortfolioCards";
 import ContactSection from "./components/Contact/ContactSection";
 
