@@ -25,9 +25,20 @@ const slidesCertificate = [
 function App() {
   const portfolioSectionRef = useRef(null);
   const contactSectionRef = useRef(null);
+  const heroSectionRef = useRef(null);
+
   return (
     <div className="relative flex flex-col min-h-screen w-full bg-slate-900">
-      <Navbar />
+      <section ref={heroSectionRef} className="scroll-mt-20">
+        <Navbar
+          onHeroClick={() => {
+            heroSectionRef.current?.scrollIntoView({ behavior: "smooth" });
+          }}
+        />
+      </section>
+
+      {/* Hero Section with ref */}
+
       <Header
         onPortfolioClick={() => {
           portfolioSectionRef.current?.scrollIntoView({ behavior: "smooth" });
@@ -36,12 +47,15 @@ function App() {
           contactSectionRef.current?.scrollIntoView({ behavior: "smooth" });
         }}
       />
+
       <AboutSection slidesCertificate={slidesCertificate} />
+
       <section ref={portfolioSectionRef} className="scroll-mt-20">
         <PortfolioCards />
         <PortfolioFile />
       </section>
-      <section ref={contactSectionRef}>
+
+      <section ref={contactSectionRef} className="scroll-mt-20">
         <ContactSection />
       </section>
     </div>

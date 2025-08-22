@@ -5,8 +5,8 @@ export default function Header({ onPortfolioClick, onContactClick }) {
       <div className="absolute inset-0" />
 
       <div className="text-center space-y-8 px-6 relative z-10">
-        {/* Name Header */}
-        <div className="relative">
+        {/* Name Header (click to scroll to hero) */}
+        <div className="relative cursor-pointer">
           <h1 className="font-jetbrains-mono font-black text-6xl md:text-7xl lg:text-8xl text-lime-400">
             DANIEL DANCHEV
           </h1>
@@ -43,6 +43,7 @@ export default function Header({ onPortfolioClick, onContactClick }) {
           </button>
         </div>
       </div>
+
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
         <div className="w-1 h-16 bg-gradient-to-b from-lime-400 to-transparent rounded-full"></div>

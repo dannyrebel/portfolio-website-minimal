@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Navbar() {
+export default function Navbar({ onHeroClick }) {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
@@ -8,7 +8,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="font-jetbrains-mono font-bold text-lime-400 text-xl">
+          <div
+            className="font-jetbrains-mono font-bold text-lime-400 text-xl"
+            onClick={onHeroClick}
+          >
             DD
           </div>
 
