@@ -1,3 +1,5 @@
+import { FaLinkedin, FaGithubSquare } from "react-icons/fa";
+
 export default function Header({ onPortfolioClick, onContactClick }) {
   return (
     <div className="min-h-screen flex items-center justify-center bg-slate-900 relative overflow-hidden">
@@ -39,8 +41,25 @@ export default function Header({ onPortfolioClick, onContactClick }) {
             className="px-8 py-4 border-2 border-green-400 text-green-400 font-jetbrains-mono font-bold text-lg rounded-none hover:bg-green-400 hover:text-slate-900 transition-transform transform hover:scale-105 relative overflow-hidden group"
           >
             <span className="relative z-10">[CONTACT_ME.bat]</span>
-            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-500" />
+            <span className="absolute inset-0 bg-gradient-to-r from-transparent rounded-lg via-white/20 to-transparent transform -translate-x-full group-hover:translate-x-full transition-transform duration-500" />
           </button>
+        </div>
+        {/* Social links */}
+        <div className="flex justify-center items-center rounded-lg gap-1">
+          <a
+            href="https://www.linkedin.com/in/daniel-danchev-52a044206/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="hover:bg-slate-700/50 transition-all duration-300 hover:scale-105 text-4xl text-lime-500 cursor-pointer" />
+          </a>
+          <a
+            href="https://github.com/dannyrebel"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithubSquare className="hover:bg-slate-700/50 transition-all duration-300 hover:scale-105 text-4xl text-lime-500 cursor-pointer" />
+          </a>
         </div>
       </div>
 

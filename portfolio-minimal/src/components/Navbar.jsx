@@ -38,7 +38,7 @@ export default function Navbar({ onHeroClick }) {
                 href="#contact"
                 className="text-slate-200 hover:text-lime-400 transition-all duration-300"
               >
-                [contact.py]
+                [contact.css]
               </a>
             </li>
           </ul>

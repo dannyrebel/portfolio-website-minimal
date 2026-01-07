@@ -8,6 +8,7 @@ import {
   DiPython,
 } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { SiGithubactions } from "react-icons/si";
 
 const skills = [
   { icon: DiCss3, label: "CSS3" },
@@ -18,6 +19,7 @@ const skills = [
   { icon: DiNpm, label: "NPM" },
   { icon: DiPython, label: "Python" },
   { icon: RiTailwindCssFill, label: "Tailwind CSS" },
+  { icon: SiGithubactions, label: "Github Actions" },
 ];
 
 export default function AboutSkills() {
