@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import { motion } from "framer-motion";
 import portfolioImage1 from "../../assets/portfolio1.png";
 import portfolioImage2 from "../../assets/autoaurathumbnail.png";
@@ -5,7 +6,7 @@ import portfolioImage2 from "../../assets/autoaurathumbnail.png";
 const portfolioProjects = [
   {
     id: 1,
-    title: "This website.",
+    title: "This website",
     description:
       "A modern portfolio website built with React, Vite, and Tailwind CSS. Framer motion animations, responsive design, CI/CD through Cloudflare.",
     image: portfolioImage1,
@@ -118,7 +119,6 @@ export default function PortfolioCards() {
             <motion.div
               key={project.id}
               variants={cardVariants}
-              whileHover={{ y: -10 }}
               className="group bg-slate-800/50 backdrop-blur-sm rounded-xl overflow-hidden border border-slate-700/50 hover:border-lime-400/50 transition-all duration-300 hover:shadow-xl hover:shadow-lime-400/10"
             >
               {/* Project Image */}

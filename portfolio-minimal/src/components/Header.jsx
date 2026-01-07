@@ -65,7 +65,7 @@ export default function Header({ onPortfolioClick, onContactClick }) {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-1 h-16 bg-gradient-to-b from-lime-400 to-transparent rounded-full"></div>
+        <div className="w-0.5 h-8 md:w-1 md:h-16 bg-gradient-to-b from-lime-400 to-transparent rounded-full"></div>
       </div>
     </div>
   );
