@@ -1,6 +1,6 @@
 export default function PortfolioFile() {
   return (
-    <section className="max-w-5xl mx-auto px-6 py-6 flex flex-col items-center space-y-6 backdrop-blur-sm ">
+    <section className="max-w-5xl mx-auto px-6 flex flex-col items-center backdrop-blur-sm ">
       <a
         href="/Daniel_Danchev_CV_25.pdf"
         download
