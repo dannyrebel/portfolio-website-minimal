@@ -21,8 +21,8 @@ const portfolioProjects = [
     description:
       "Car detailing service built with React, Vite and Tailwind CSS. Framer motion animations, responsive design, CI/CD through Github Actions.",
     image: portfolioImage2,
-    liveUrl: "https://dannyrebel.github.io/",
-    githubUrl: "https://github.com/dannyrebel/dannyrebel.github.io",
+    liveUrl: "https://autoaura.bg/",
+    githubUrl: "https://github.com/dannyrebel/autoaura-car-detailing",
     tags: [
       "React",
       "Tailwind CSS",
